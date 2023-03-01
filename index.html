@@ -27,57 +27,26 @@
         <div class="container">
             <div class="row pt-4 mt-4">
             <div class="col-4 p-2">
-              <img src="assets/img/img_placeholder_avatar.jpg" alt="" width="250"/></div>
+              <img src="img/FG.png" alt="" width="250"/></div>
     <div class="col-8 p-2">
     <h1>Icahn School of Medicine</h1>
                 <h2 class="pb-2">AEquity: A Deep Learning Based Metric for Detecting, Characterizing and Mitigating Dataset Bias</h2>
                 
-                <p class="lead mb-4">Text goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p class="lead mb-4">Diagnostic and prognostic algorithms can recapitulate and perpetuate systemic biases against underserved populations. Post-hoc technical solutions do not work well because they are unable to overcome biased data used to train algorithms.. A more data-centric approach may help address bias earlier in the process of development of algorithms. We present AEquity (AEq), a sample-efficient deep-learning based metric, that measures the learnability of subsets of data representing underserved populations. We then show how the systematic analysis of AEq values across subpopulations allows the identification of different manifestations of bias in two healthcare datasets with demonstrated bias. In the first case, we analyze a computer vision model trained on chest radiographs to investigate its underperformance on chest X-rays from Black individuals for various diagnoses and develop targeted interventions at the dataset level which mitigate bias. We also apply AEq to a cost-predictive model to show how the choice of the label leads to bias against black patients, which can be remedied by predicting comorbidities instead of costs. Thus, AEquity is a novel and broadly applicable metric which can be applied to diagnose and remediate bias in healthcare datasets.</p>
                 
                 </div>
             </div>
             
              <div class="row">
-            <div class="text-left mt-2">
-                <h4 class="pb-2">Methodology Overview</h4>
-                <p class="lead mb-4">Algorithmic bias is the inability of an algorithm to generalize to a given group, causing selective underperformance (1). 
-                    This is pervasive in healthcare and perpetuates existing disparities.  Algorithms developed using standard techniques on diverse datasets can 
-                    still be significantly biased against individuals based on race/ethnicity or insurance status. For example, the application of standard 
-                    computer vision models to chest radiographs resulted in selective underdiagnosis in people who are Black, Latino or receive Medicaid (2, 3), 
-                    and an algorithm used to predict health needs was found to exhibit significant racial bias against Black patients (4). This occurs because 
-                    algorithms developed using data from systems with longstanding discrimination and inequities tend to recapitulate those biases (5).</p>
-
-                    <p class="lead mb-4">Post-hoc technical solutions can help mitigate bias to a certain extent (6). However, these typically involve recalibration which, 
-                    except in narrow circumstances, implies a tradeoff between sensitivity and specificity in underserved populations, leading to worse 
-                    performance (7). Thus, there is increasing recognition of an urgent need to address bias earlier in the algorithm development pipeline (5, 8).</p>
-
-                    <p class="lead mb-4">We developed an approach that measures potential biases by investigating the underlying structure of population-specific subsets of the data 
-                    (Fig 1). This then allows for appropriate augmentation to the existing dataset to better represent that population.</p>
-
-                    <p class="lead mb-4">In this manuscript, we describe a deep learning-based metric that can be used for the characterization and mitigation 
-                        of social and predictive biases in healthcare datasets. We call this metric AEq because it utilizes an autoencoder to provide actionable, 
-                        data-driven feedback towards equitable performance of models.  We have previously shown that unsupervised learning with an autoencoder 
-                        can estimate the minimum sample size needed to train a deep neural network on a given dataset - minimum convergence sample estimate 
-                        (MCSE) (10). We define AEq as the MCSE stratified by a group characteristic, such as race or socioeconomic status, and a class such as 
-                        “pneumonia” or “edema” for Chest X-rays. In general, a higher AEq value for a group within a given diagnostic label suggests that 
-                        generalization is more difficult and more samples are needed for learning. AEq is reported as log_2(sample size estimate) for 
-                        interpretability.</p>
-                    <p class="lead mb-4">Under most constraints, AEq values exhibit dataset-specific properties, and can be used subsequently to guide 
-                        data-driven, actionable feedback such as selecting informative outcomes, collecting more diverse data or prioritizing collection 
-                        of data from a specific subgroup (Fig 2). In conjunction with model-centric solutions and grassroots interventions, AEq can help 
-                        mitigate propagation of systemic biases in “black-box” machine learning models. For this tool, we use standard imaging datasets 
-                        to demonstrate how AEq changes with different types of biases.  We then demonstrate its applicability to mitigate under-diagnosis 
-                        bias in a deep learning model trained on chest radiographs, and an under-allocation bias in a model used to predict healthcare 
-                        needs. Finally, we provide an easy-to-use, Python library to generate AEq values for tabularized datasets with the demonstration 
-                        on social and predictive biases.</p>
-            </div></div>
+            </div>
         </div>
         <div class="container">
           <div class="row text-center">
             <div  class="p-12" style="padding-left: 10%; padding-right: 10%;">
 
-<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class="embed-container"><iframe src="https://youtu.be/SnyV2KNoEuo" frameBorder="0" allowfullscreen=""></iframe></div>
-                
+<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class="embed-container"><iframe src="https://www.youtube.com/embed/SnyV2KNoEuo" frameBorder="0" allowfullscreen=""></iframe></div>
+
+
 </div> 
               </div>
                
@@ -87,12 +56,10 @@
   <div class="row">
     <div class="col p-2 m-2 p-3 border border-success mr-3"  style="--bs-border-opacity: .5;">
         <h4 class="pb-2">Github Repository</h4>
-        <p class="lead mb-4">More text is here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    <a href="#">Github Repository Link</a> </div>
+    <a href="https://github.com/Nadkarni-Lab/AEquity">Github Repository Link</a> </div>
     <div class="col p-2 m-2 p-3 border border-success"  style="--bs-border-opacity: .5;">
-        <h4 class="pb-2">Supporting Documentation</h4>
-        <p class="lead mb-4">More text is here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    <a href="#">Supporting Documentation PDF Link</a> </div>
+        <h4 class="pb-2">PDF Submission</h4>
+    <a href="https://github.com/Nadkarni-Lab/AEquity/blob/main/text/AEQuity_NCATS_Submission.pdf">Link to submission in PDF format</a> </div>
   </div>
 
 </div>
